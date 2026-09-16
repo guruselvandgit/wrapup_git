@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RIZZA Bikes</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar">
+            <h1 class="logo">RIZZA<span>BIKES</span></h1>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#bikes">Bikes</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <button id="menuBtn">☰</button>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <p class="small-title">RIDE YOUR PASSION</p>
+            <h2>POWER.<br>STYLE.<br><span>FREEDOM.</span></h2>
+            <p>
+                Discover powerful bikes designed for riders who
+                don't follow the road — they own it.
+            </p>
+
+            <a href="#bikes" class="btn">Explore Bikes</a>
+        </div>
+
+        <div class="hero-bike">
+            🏍️
+        </div>
+    </section>
+
+    <!-- Bikes Section -->
+    <section id="bikes" class="bikes-section">
+        <div class="section-title">
+            <p>OUR COLLECTION</p>
+            <h2>Choose Your Ride</h2>
+        </div>
+
+        <div class="bike-container">
+
+            <div class="bike-card">
+                <div class="bike-image">🏍️</div>
+                <h3>Street 200</h3>
+                <p>199cc | 6-Speed | Petrol</p>
+                <h4>₹2,10,000</h4>
+                <button class="details-btn" onclick="showBike('Street 200')">
+                    View Details
+                </button>
+            </div>
+
+            <div class="bike-card featured">
+                <div class="badge">POPULAR</div>
+                <div class="bike-image">🏍️</div>
+                <h3>Racing 250</h3>
+                <p>249cc | 6-Speed | Petrol</p>
+                <h4>₹2,45,000</h4>
+                <button class="details-btn" onclick="showBike('Racing 250')">
+                    View Details
+                </button>
+            </div>
+
+            <div class="bike-card">
+                <div class="bike-image">🏍️</div>
+                <h3>Adventure 390</h3>
+                <p>373cc | 6-Speed | Petrol</p>
+                <h4>₹3,40,000</h4>
+                <button class="details-btn" onclick="showBike('Adventure 390')">
+                    View Details
+                </button>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="about">
+        <div>
+            <p class="small-title">WHO WE ARE</p>
+            <h2>Built For The<br><span>Next Generation</span></h2>
+        </div>
+
+        <p>
+            RIZZA BIKES is a fictional premium motorcycle showroom
+            created for riders who love performance, technology and style.
+            Our goal is simple — make every ride memorable.
+        </p>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="contact">
+        <div class="section-title">
+            <p>GET IN TOUCH</p>
+            <h2>Book A Test Ride</h2>
+        </div>
+
+        <form id="contactForm">
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Your Email" required>
+            <input type="tel" id="phone" placeholder="Phone Number" required>
+
+            <select id="bike">
+                <option value="Street 200">Street 200</option>
+                <option value="Racing 250">Racing 250</option>
+                <option value="Adventure 390">Adventure 390</option>
+            </select>
+
+            <button type="submit" class="btn">Book Test Ride</button>
+        </form>
+
+        <p id="message"></p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h2>RIZZA<span>BIKES</span></h2>
+        <p>Ride Beyond Limits.</p>
+        <p>© 2026 RIZZA BIKES. Demo Project.</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
